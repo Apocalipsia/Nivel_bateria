@@ -26,17 +26,17 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_gravity="center_horizontal"
-            android:src="@drawable/flame_png" />
+            android:src="@drawable/c" />
 
         <TextView
 
-            android:layout_width="match_parent"
+            android:layout_width="176dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/anton"
             android:text="@string/nombre_app"
             android:textAlignment="center"
-            android:fontFamily="@font/cutefont_regular"
             android:textColor="@color/color_nombre_app"
-            android:textSize="40sp" />
+            android:textSize="50sp" />
 
     </LinearLayout>
 

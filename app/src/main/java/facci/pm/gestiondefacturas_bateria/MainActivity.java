@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Log.e("4C", "OnCreate");
+        Log.e("4A", "OnCreate");
 
         mBatteryLevelText = (TextView) findViewById(R.id.textView);
         mBatteryLevelProgress = (ProgressBar) findViewById(R.id.progressBar);
@@ -40,30 +40,30 @@ public class MainActivity extends AppCompatActivity {
         super.onStart();
         registerReceiver(mReceiver, new IntentFilter(Intent.ACTION_BATTERY_CHANGED));
 
-        Log.e("4C", "OnStart");
+        Log.e("4A", "OnStart");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        Log.e("4C", "OnResume");
+        Log.e("4A", "OnResume");
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.e("4C", "OnRestart");
+        Log.e("4A", "OnRestart");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.e("4C", "OnPause");
+        Log.e("4A", "OnPause");
 
         if (isDestroyed())
         {
-            Log.e("4C", "Destruida");
+            Log.e("4A", "Destruida");
         }
     }
 
@@ -72,13 +72,13 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         unregisterReceiver(mReceiver);
 
-        Log.e("4C", "OnStop");
+        Log.e("4A", "OnStop");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.e("4C", "OnDestroy");
+        Log.e("4A", "OnDestroy");
     }
 
 
